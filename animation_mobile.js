@@ -23,7 +23,10 @@ $(function(){
   
       lax.addDriver('scrollY', function () {
         return window.scrollY
-      });
+      }, {
+          frameStep: number = 0.5,
+      }
+      );
   
       lax.addElements('.logo', {
         scrollY: {
@@ -96,12 +99,12 @@ $(function(){
       lax.addElements('.header_picture', {
         scrollY: {
           opacity: [
-            ['screenHeight/6', 'elOutY/3'],
+            ['screenHeight/3', 'screenHeight/2'],
             [0, 1]
           ],
           translateY: [
             ['elInY', 'elOutY'],
-            [100, -600]
+            [150, -100]
           ],
         }
       })
