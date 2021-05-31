@@ -5,42 +5,121 @@
     <title>Łukasz Biernacki</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" media="(min-width: 650px)" href="css/desk.css">
+    <link rel="stylesheet" media="(max-width: 650px)" href="css/mobile.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   </head>
 
   <body>
 
-    <h1 class="instruction">Scroll down</h1>
-
+    <div class="start">
+      <h1 id="start" class="instruction">Przesuń w dół</h1>
+    </div>
+    
     <header>
 
       <div class="name_bar">
         <img class="logo" src="img/logo.png">
         <h1 class="name">Łukasz Biernacki</h1>
         <div class="box">
-          <h2>Grafik</h2>
-          <h2>Web developer</h2>
-          <h2>Animator</h2>
+          <h2 id="flow">Grafik</h2>
+          <h2 id="flow">Web developer</h2>
+          <h2 id="flow">Animator</h2>
         </div>
       </div>
-
-
-
-      <p class="text" data-lax-preset="spin-180">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam fuga vitae quae culpa et illum voluptatem incidunt 
-        atque itaque error, dolorem autem magnam blanditiis ad, aspernatur doloremque inventore ratione unde!
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam fuga vitae quae culpa et illum voluptatem incidunt 
-        atque itaque error, dolorem autem magnam blanditiis ad, aspernatur doloremque inventore ratione unde!
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam fuga vitae quae culpa et illum voluptatem incidunt 
-        atque itaque error, dolorem autem magnam blanditiis ad, aspernatur doloremque inventore ratione unde!
-      </p>
 
       <img class="header_picture" src="img/3d.png">
     </header>
 
+    <!-- Kim jestem -->
+    <div class="info">
+
+    <h1 id="headline_1">Hej!</h1>
+
+    <p class="text">
+      Nazywam się Łukasz. <br>
+      Zajmuję się grafiką, web designem,
+      kodowaniem, montażem video i wieloma innymi. <br>
+      Bliskie jest mi programowanie,
+      jak i umiejętności miękkie takie jak rysowanie.
+      Stąd też chciałbym kontynuwać moją karierę w kiernuku 
+      grafiki i web designu. <br> 
+      Interesuję się tematyką Big Data,
+      cały czas się szkolę w tym temacie, chciałbym w przyszłości 
+      tworzyć projekty w oparciu o big data. <br>
+      Masowo czytam literaturę faktu, oglądam masę dokumentów
+      uwielbiam historię zwykłych ludzi.
+
+    </p>
+
+    <button class="actual_work">Zobacz nad czym pracuję:</button>
+
+    </div>
+
+    <!-- Projekty -->
+    <div class="projekty">
+
+    <div class="info">
+
+      <h1 id="headline_2">Projekty</h1>
+      <p class="text" id="text_2">
+        Zaraz pokażą się moje przykładowe realizacje.
+        Niestety nie jestem w stanie umieścić wszystkich 
+        na tej stronie. <br>
+        Możecie śledzić moje projekty na instagramie i behance.
+
+      </p>
+
+    </div>
+
+    <div id="img" class="mosaic">
+
+        <img src='img/del.jpg' class="mosaic_item">
+        <img src='img/ear.jpg' class="mosaic_item">
+        <img src='img/kaw.jpg' class="mosaic_item">
+        <img src='img/kob.jpg' class="mosaic_item">
+        <img src='img/lak.jpg' class="mosaic_item">
+
+        <img src='img/lak.jpg' class="mosaic_item">
+        <img src='img/kob.jpg' class="mosaic_item">
+        <img src='img/kaw.jpg' class="mosaic_item">
+        <img src='img/ear.jpg' class="mosaic_item">      
+        <img src='img/del.jpg' class="mosaic_item">
+        
+    </div>
+
+    </div>
+
+    
+    <div class="works_box">
+
+      <div class="works_box--element">
+        <h1 id="grafika">Grafika</h1>
+      </div>
+
+      
+      <div class="works_box--element">
+        <h1 id="grafika">Kodowanie</h1>
+      </div>
+
+
+      <div class="works_box--element">
+        <h1 id="grafika">Multimedia</h1>
+      </div>
+
+
+    </div>
+      
+    <!-- Kontakt -->
+    
+
 
   </body>
+
   <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
   <script src="node_modules/lax.js/lib/lax.min.js"></script>
-  <script type="text/javascript" src="script.js"></script>
+
+  <script type="text/javascript" src="animation_mobile.js"></script>
+  <script type="text/javascript" src="animation_desktop.js"></script>
+
 </html>
