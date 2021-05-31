@@ -2,7 +2,7 @@ $(function(){
 
 
     // RESPONSIVE
-    const mobile = window.matchMedia("(max-width: 576px)");
+    const mobile = window.matchMedia("(max-width: 800px)");
   
     function handleTabletChange(e) {
       if (e.matches) {
@@ -86,7 +86,7 @@ $(function(){
           ],
           translateX: [
             ['elInY', 'elOutY-200'],
-            [100, 0]
+            [100, 25]
           ],
           translateY: [
             ['elInY', 'elOutY'],
@@ -141,7 +141,7 @@ $(function(){
       lax.addElements('.actual_work', {
         scrollY: {
           opacity: [
-            ['elInY + (screenHeight/4)', 'elInY + (screenHeight/3)'],
+            ['elInY', 'elInY + (screenHeight/10)'],
             [0, 1]
           ],
           // translateY: [
@@ -149,7 +149,7 @@ $(function(){
           //   [0, 100]
           // ],
           scale: [
-            ['elInY', 'elInY + (screenHeight/2)'],
+            ['elInY', 'elInY + (screenHeight/10)'],
             [1.15, 1]
           ]
         }
@@ -188,7 +188,7 @@ $(function(){
       lax.addElements('#img', {
         scrollY: {
           opacity: [
-            ['elInY + (screenHeight/2)' , 'elInY + (screenHeight*0.7)'],
+            ['elInY' , 'elInY + (screenHeight*0.75)'],
             [0, 1]
           ],
           // translateY: [

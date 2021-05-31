@@ -1,6 +1,6 @@
 $(function(){
 
-  const mobile = window.matchMedia("(min-width: 576px)");
+  const mobile = window.matchMedia("(min-width: 800px)");
 
   function handleTabletChange(e) {
     if (e.matches) {
@@ -126,10 +126,10 @@ $(function(){
           ['elInY + (screenHeight/4)' , 'elInY + (screenHeight/2)'],
           [0, 1]
         ],
-        // translateY: [
-        //   ['elInY', 'elOutY'],
-        //   [0, 100]
-        // ]
+        translateY: [
+          ['elInY', 'elOutY'],
+          [0, 100]
+        ]
       }
     })
 
@@ -140,24 +140,24 @@ $(function(){
           ['elInY + (screenHeight/4)' , 'elInY + (screenHeight/2)'],
           [0, 1]
         ],
-        // translateY: [
-        //   ['elInY', 'elOutY'],
-        //   [0, 100]
-        // ]
+        translateY: [
+          ['elInY', 'elOutY'],
+          [0, 100]
+        ]
       }
     })
 
     //BUTTON
-    lax.addElements('.actual_work', {
+    lax.addElements('#button1', {
       scrollY: {
         opacity: [
           ['elInY + (screenHeight/4)', 'elInY + (screenHeight/3)'],
           [0, 1]
         ],
-        // translateY: [
-        //   ['elInY', 'elOutY'],
-        //   [0, 100]
-        // ],
+        translateY: [
+          ['elInY', 'elOutY'],
+          [0, 100]
+        ],
         scale: [
           ['elInY', 'elInY + (screenHeight/2)'],
           [1.15, 1]
@@ -194,19 +194,37 @@ $(function(){
     })
 
     
+    //BUTTON
+    lax.addElements('#button2', {
+      scrollY: {
+        opacity: [
+          ['elInY + (screenHeight/4)', 'elInY + (screenHeight/3)'],
+          [0, 1]
+        ],
+        scale: [
+          ['elInY', 'elInY + (screenHeight/2)'],
+          [1.15, 1]
+        ]
+      }
+    })
+
+
+    
     //IMG 1
     lax.addElements('#img', {
       scrollY: {
         opacity: [
-          ['elInY + (screenHeight/2)' , 'elInY + (screenHeight*0.7)'],
+          ['elInY + (screenHeight/8)' , 'elInY + (screenHeight*0.7)'],
           [0, 1]
         ],
-        // translateY: [
-        //   ['elInY', 'elOutY'],
-        //   [0, 100]
-        // ]
+        scale: [
+          ['elInY', 'elInY + (screenHeight/2)'],
+          [1.15, 1]
+        ]
       }
     })
+
+
 
     //Grafika
     lax.addElements('#grafika', {
@@ -218,7 +236,24 @@ $(function(){
       }
     })
 
+    //Grafika
+    lax.addElements('#examples', {
+      scrollY: {
+        opacity: [
+          ['elInY + (screenHeight/5)', 'elInY + (screenHeight/2)'],
+          [0, 1]
+        ],
+        scale: [
+          ['elInY', 'elInY + (screenHeight/2)'],
+          [1.15, 1]
+        ]
+      }
+    })
+
   
   })
+
+
+
   }
 })
