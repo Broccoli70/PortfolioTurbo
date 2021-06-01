@@ -11,11 +11,6 @@ $(function(){
   
   mobile.addListener(handleTabletChange)
   handleTabletChange(mobile)
-
-
-  // $(window).ready( () => {
-  //   $(window).scrollTop(0);
-  // })
   
   function animation() {
   lax.init()
@@ -48,27 +43,27 @@ $(function(){
     lax.addElements('#start', {
       scrollY: {
         opacity: [
-          [0, 150],
+          [0, 80],
           [1, 0]
         ],
         scale: [
           [0, 400],
-          [1, 5]
+          [1, 3]
         ],
       }
 
     })
 
-      // SCROLL DOWN
-      lax.addElements('#arrow', {
-        scrollY: {
-          opacity: [
-            [0, 50],
-            [1, 0]
-          ],
-        }
-  
-      })
+    // SCROLL DOWN
+    lax.addElements('#svg', {
+      scrollY: {
+        opacity: [
+          [0, 80],
+          [1, 0]
+        ],
+      }
+
+    })
 
 
     // LUKASZ BIERNACKI

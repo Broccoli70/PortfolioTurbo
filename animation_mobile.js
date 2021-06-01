@@ -1,6 +1,7 @@
 $(function(){
 
 
+  
     // RESPONSIVE
     const mobile = window.matchMedia("(max-width: 800px)");
   
@@ -54,8 +55,8 @@ $(function(){
             [1, 0]
           ],
           scale: [
-            [0, 400],
-            [1, 4]
+            [0, 'elOutY'],
+            [1, 1.7]
           ],
         }
   
@@ -210,6 +211,11 @@ $(function(){
   
     
     })
+
+    
     }
+
+
+
   })
   

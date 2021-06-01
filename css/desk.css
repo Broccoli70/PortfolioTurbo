@@ -195,7 +195,8 @@ body {
   -ms-grid-rows: 1fr;
   -ms-grid-columns: 10% 40% 1fr 10%;
       grid-template: 1fr / 10% 40% 1fr 10%;
-  background: #26203b;
+  background: #350042;
+  background: linear-gradient(45deg, #350042 0%, #1e0637 100%);
   padding-top: 10%;
   padding-bottom: 10%;
   margin-top: 20vh;

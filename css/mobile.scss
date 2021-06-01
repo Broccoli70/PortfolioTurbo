@@ -7,6 +7,10 @@
   font-family: 'Cormorant Garamond', serif;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -161,7 +165,8 @@ body {
 .projekty {
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr;
-  background: rgb(38, 32, 59);
+  background: rgb(53,0,66);
+  background: linear-gradient(45deg, rgba(53,0,66,1) 0%, rgba(30,6,55,1) 100%);
 
   padding-top: 7vh;
   padding-bottom: 5vh;
