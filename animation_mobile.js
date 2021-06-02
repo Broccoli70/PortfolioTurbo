@@ -24,8 +24,6 @@ $(function(){
   
       lax.addDriver('scrollY', function () {
         return window.scrollY
-      }, {
-          frameStep: number = 0.5,
       }
       );
   
@@ -34,14 +32,6 @@ $(function(){
           opacity: [
             [0, 'elInY + (screenHeight*0.75)'],
             [0, 1]
-          ],
-          translateX: [
-            ['elInY', 100],
-            [-200, 0]
-          ],
-          translateY: [
-            ['elInY', 'elOutY'],
-            [0, 100]
           ]
         }
   
@@ -56,7 +46,7 @@ $(function(){
           ],
           scale: [
             [0, 'elOutY'],
-            [1, 1.7]
+            [1, 1.25]
           ],
         }
   
@@ -68,10 +58,6 @@ $(function(){
           opacity: [
             [0, 'elInY + (screenHeight*0.75)'],
             [0, 1]
-          ],
-          translateY: [
-            ['elInY', 'elOutY'],
-            [0, 100]
           ]
         }
   
@@ -85,14 +71,6 @@ $(function(){
             [0, 'elInY + (screenHeight*0.75)'],
             [0, 1]
           ],
-          translateX: [
-            ['elInY', 'elOutY-200'],
-            [100, 25]
-          ],
-          translateY: [
-            ['elInY', 'elOutY'],
-            [0, 100]
-          ]
         }
       })
   
@@ -116,11 +94,7 @@ $(function(){
           opacity: [
             ['elInY + (screenHeight/4)' , 'elInY + (screenHeight/2)'],
             [0, 1]
-          ],
-          // translateY: [
-          //   ['elInY', 'elOutY'],
-          //   [0, 100]
-          // ]
+          ]
         }
       })
   
@@ -130,11 +104,7 @@ $(function(){
           opacity: [
             ['elInY + (screenHeight/4)' , 'elInY + (screenHeight/2)'],
             [0, 1]
-          ],
-          // translateY: [
-          //   ['elInY', 'elOutY'],
-          //   [0, 100]
-          // ]
+          ]
         }
       })
   
@@ -145,10 +115,6 @@ $(function(){
             ['elInY', 'elInY + (screenHeight/10)'],
             [0, 1]
           ],
-          // translateY: [
-          //   ['elInY', 'elOutY'],
-          //   [0, 100]
-          // ],
           scale: [
             ['elInY', 'elInY + (screenHeight/10)'],
             [1.15, 1]
@@ -163,10 +129,6 @@ $(function(){
             ['elInY + (screenHeight/4)' , 'elInY + (screenHeight/2)'],
             [0, 1]
           ],
-          // translateY: [
-          //   ['elInY', 'elOutY'],
-          //   [0, 100]
-          // ]
         }
       })
   
@@ -176,11 +138,7 @@ $(function(){
           opacity: [
             ['elInY + (screenHeight/4)' , 'elInY + (screenHeight/2)'],
             [0, 1]
-          ],
-          // translateY: [
-          //   ['elInY', 'elOutY'],
-          //   [0, 100]
-          // ]
+          ]
         }
       })
   
@@ -192,10 +150,6 @@ $(function(){
             ['elInY' , 'elInY + (screenHeight*0.75)'],
             [0, 1]
           ],
-          // translateY: [
-          //   ['elInY', 'elOutY'],
-          //   [0, 100]
-          // ]
         }
       })
   

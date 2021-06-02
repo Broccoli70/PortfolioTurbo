@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 * {
   margin: 0;
@@ -51,18 +51,18 @@ body {
 .name_bar {
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr;
-  width: 90%;
+  width: 70%;
   height: 20vh;
   margin-top: 10vh;
-  margin-left: 5%;
+  margin-left: 14%;
 
   .logo {
     grid-area: 1 / 1 / 1 / 1;
     opacity: 0;
 
     justify-self: flex-start;
-    align-self: flex-start;
-    width: 50%;
+    align-self: flex-end;
+    width: 40%;
     justify-self: center;
     align-self: center;
   }
@@ -72,15 +72,15 @@ body {
     opacity: 0;
 
     line-height: 1;
-    font-kerning: 2;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 500;
+    margin-left: -8%;
   }
 
   h2 {
     opacity: 0;
 
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 400;
     background: black;
     color: white;
@@ -91,7 +91,7 @@ body {
     justify-content: center;
 
     border: 1px solid black;
-    padding: 0 2% 0 2%;
+    padding: 0 3% 0 3%;
     border-radius: 100px;
 
     &:first-child {
@@ -103,13 +103,14 @@ body {
 
 
   .box {
-    margin-top: 2vh;
     display: flex;
     flex-direction: row;
     grid-area: 2 / 1 / 3 / 3;
 
     justify-self: center;
     align-self: center;
+    margin-left: 25%;
+    margin-top: -1vh;
 
     width: 100%;
     height: 1.2rem;
@@ -122,8 +123,11 @@ body {
   width: 80%;
   margin-left: 10%;
   margin-top: 40vh;
+  margin-bottom: 5vh;
 
   h1 {
+    font-family: 'poppins';
+    font-weight: 800;
     opacity: 0;
     grid-area: 1 / 1 / 2 / 1 ;
     font-weight: 400;
@@ -134,7 +138,7 @@ body {
 .text {
   grid-area: 2 / 1 / 3 / 1 ;
   font-size: 1.25rem;
-  margin-top: 1vh;
+  margin-top: 2.5vh;
   width: 100%;
   opacity: 0;
 }
@@ -147,7 +151,7 @@ body {
   border: 1px solid black;
   background: none;
   border-radius: 100px;
-  margin-top: 2vh;
+  margin-top: 5vh;
   padding: 0 2% 0 2%;
 
   &:active {
