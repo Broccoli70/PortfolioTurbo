@@ -127,10 +127,9 @@ body {
 
   h1 {
     font-family: 'poppins';
-    font-weight: 800;
     opacity: 0;
     grid-area: 1 / 1 / 2 / 1 ;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 4rem;
   }
 }
@@ -193,7 +192,7 @@ body {
   width: 80%;
   margin-left: 10%;
   margin-top: 5vh;
-  align-items: center;
+  align-items: flex-start;
 
   grid-column-gap: 0.5rem;
   display: grid;
@@ -203,11 +202,12 @@ body {
 .mosaic_item {
   width: 100%;
   border-radius: 5px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .big_title {
-  font-size: 6rem;
+  font-family: 'poppins';
+  font-size: 4rem;
   font-weight: 400;
   margin-left: 10%;
   margin-top: 2vh;

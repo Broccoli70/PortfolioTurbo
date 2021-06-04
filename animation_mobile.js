@@ -112,13 +112,9 @@ $(function(){
       lax.addElements('.actual_work', {
         scrollY: {
           opacity: [
-            ['elInY', 'elInY + (screenHeight/10)'],
+            ['elInY + (screenHeight/8)', 'elInY + (screenHeight/6)'],
             [0, 1]
           ],
-          scale: [
-            ['elInY', 'elInY + (screenHeight/10)'],
-            [1.15, 1]
-          ]
         }
       })
   
