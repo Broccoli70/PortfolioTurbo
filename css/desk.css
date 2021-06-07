@@ -190,6 +190,10 @@ body {
   border: 1px solid white;
 }
 
+.actual_work--low {
+  margin-top: 2vh;
+}
+
 .projekty {
   display: -ms-grid;
   display: grid;
@@ -291,7 +295,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: 10%;
-  margin-top: 10vh;
+  margin-top: 3vh;
 }
 
 .kontakt h1 {
@@ -299,8 +303,22 @@ footer {
   font-weight: 400;
 }
 
+.kontakt .kontakt_text {
+  margin-top: 2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .kontakt #mail {
   cursor: pointer;
+}
+
+.kontakt .mail {
+  margin-left: 2%;
+  border: 1px solid black;
+  padding: 0% 5% 0% 5%;
+  border-radius: 100px;
 }
 
 body::-webkit-scrollbar {

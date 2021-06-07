@@ -149,6 +149,10 @@ body {
     color: white;
     border: 1px solid white;
   }
+
+  &--low {
+    margin-top: 2vh;
+  }
 }
 
 .projekty {
@@ -227,23 +231,30 @@ footer {
   display: flex;
   flex-direction: column;
   margin-left: 10%;
-  margin-top: 10vh;
+  margin-top: 3vh;
 
   h1 {
     font-size: 4rem;
     font-weight: 400;
   }
   
-  .text_kontakt {
-
+  .kontakt_text {
+    margin-top: 2vh;
+    display: flex;
   }
 
   #mail {
     cursor: pointer;
   }
 
-}
+  .mail {
+    margin-left: 2%;
+    border: 1px solid black;
+    padding: 0% 5% 0% 5%;
+    border-radius: 100px;
+  }
 
+}
 
 
 
