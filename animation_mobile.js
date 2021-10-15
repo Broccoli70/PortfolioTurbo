@@ -42,7 +42,7 @@ $(function(){
       lax.addElements('.name', {
         scrollY: {
           opacity: [
-            [45, 'elInY + (screenHeight*0.75)', 'elInY + (screenHeight*0.9)', 'elInY + (screenHeight*1.1)'],
+            [45, 'elInY + (screenHeight*0.75)', 'elInY + (screenHeight*0.9)', 'elInY + (screenHeight*1.0)'],
             [0, 1, 1, 0]
           ]
         }
@@ -54,7 +54,7 @@ $(function(){
       lax.addElements('#flow', {
         scrollY: {
           opacity: [
-            [45, 'elInY + (screenHeight*0.65)', 'elInY + (screenHeight*0.8)', 'elInY + (screenHeight*0.9)'],
+            [45, 'elInY + (screenHeight*0.65)', 'elInY + (screenHeight*0.7)', 'elInY + (screenHeight*0.85)'],
             [0, 1, 1, 0]
           ],
         }
@@ -67,10 +67,6 @@ $(function(){
             ['elInY + (screenHeight*0.65)', 'elInY + (screenHeight*0.95)', 'elInY + (screenHeight*1.1)', 'elInY + (screenHeight*1.2)'],
             [0, 1, 1, 0]
           ],
-          translateY: [
-            ['elInY', 'elOutY-200'],
-            [150, -200]
-          ],
         }
       })
   
@@ -78,7 +74,7 @@ $(function(){
       lax.addElements('#headline_1', {
         scrollY: {
           opacity: [
-            ['elInY + (screenHeight*0.7)' , 'elInY + (screenHeight*0.8)'],
+            ['elInY + (screenHeight*0.6)' , 'elInY + (screenHeight*0.7)'],
             [0, 1]
           ]
         }
@@ -88,7 +84,7 @@ $(function(){
       lax.addElements('.text', {
         scrollY: {
           opacity: [
-            ['elInY + (screenHeight*0.55)' , 'elInY + (screenHeight*0.65)'],
+            ['elInY + (screenHeight*0.55)' , 'elInY + (screenHeight*0.6)'],
             [0, 1]
           ]
         }
@@ -98,7 +94,17 @@ $(function(){
       lax.addElements('.actual_work', {
         scrollY: {
           opacity: [
-            ['elInY + (screenHeight*0.45)' , 'elInY + (screenHeight*0.5)'],
+            ['elInY + (screenHeight*0.4)' , 'elInY + (screenHeight*0.5)'],
+            [0, 1]
+          ],
+        }
+      })
+
+      //PIEING
+      lax.addElements('#pieing', {
+        scrollY: {
+          opacity: [
+            ['elInY + (screenHeight*0.4)' , 'elInY + (screenHeight*0.5)'],
             [0, 1]
           ],
         }
@@ -123,29 +129,7 @@ $(function(){
           ]
         }
       })
-  
-      
-      //IMG 1
-      lax.addElements('#img', {
-        scrollY: {
-          opacity: [
-            ['elInY' , 'elInY + (screenHeight*0.75)'],
-            [0, 1]
-          ],
-        }
-      })
-  
-      //Grafika
-      lax.addElements('#grafika', {
-        scrollY: {
-          opacity: [
-            ['elInY + (screenHeight/5)', 'elInY + (screenHeight/2)'],
-            [0, 1]
-          ],
-        }
-      })
-  
-    
+
     })
 
     
