@@ -27,14 +27,10 @@ $(function(){
           [0, 'elInY + (screenHeight*0.75)'],
           [0, 1]
         ],
-        translateX: [
-          ['elInY', 100],
-          [-200, 0]
-        ],
-        translateY: [
-          ['elInY', 'elOutY'],
-          [0, 100]
-        ]
+        // translateY: [
+        //   ['elInY', 'elOutY'],
+        //   [0, 100]
+        // ]
       }
 
     })
@@ -46,24 +42,10 @@ $(function(){
           [0, 80],
           [1, 0]
         ],
-        scale: [
-          [0, 400],
-          [1, 3]
-        ],
       }
 
     })
 
-    // SCROLL DOWN
-    lax.addElements('#svg', {
-      scrollY: {
-        opacity: [
-          [0, 80],
-          [1, 0]
-        ],
-      }
-
-    })
 
 
     // LUKASZ BIERNACKI
@@ -73,10 +55,10 @@ $(function(){
           [0, 'elInY + (screenHeight*0.75)'],
           [0, 1]
         ],
-        translateY: [
-          ['elInY', 'elOutY'],
-          [0, 100]
-        ]
+        // translateY: [
+        //   ['elInY', 'elOutY'],
+        //   [0, 100]
+        // ]
       }
 
     })
@@ -90,13 +72,13 @@ $(function(){
           [0, 1]
         ],
         translateX: [
-          ['elInY', 'elOutY-200'],
+          ['elInY', 'elOutY-500'],
           [100, 0]
         ],
-        translateY: [
-          ['elInY', 'elOutY'],
-          [0, 100]
-        ]
+        // translateY: [
+        //   ['elInY', 'elOutY'],
+        //   [0, 100]
+        // ]
       }
     })
 
@@ -109,7 +91,7 @@ $(function(){
         ],
         translateY: [
           ['elInY', 'elOutY'],
-          [100, -600]
+          [0, -200]
         ],
       }
     })
@@ -121,10 +103,10 @@ $(function(){
           ['elInY + (screenHeight/4)' , 'elInY + (screenHeight/2)'],
           [0, 1]
         ],
-        translateY: [
-          ['elInY', 'elOutY'],
-          [0, 100]
-        ]
+        // translateY: [
+        //   ['elInY', 'elOutY'],
+        //   [0, 100]
+        // ]
       }
     })
 
@@ -135,10 +117,10 @@ $(function(){
           ['elInY + (screenHeight/4)' , 'elInY + (screenHeight/2)'],
           [0, 1]
         ],
-        translateY: [
-          ['elInY', 'elOutY'],
-          [0, 100]
-        ]
+        // translateY: [
+        //   ['elInY', 'elOutY'],
+        //   [0, 100]
+        // ]
       }
     })
 
@@ -149,14 +131,10 @@ $(function(){
           ['elInY + (screenHeight/4)', 'elInY + (screenHeight/3)'],
           [0, 1]
         ],
-        translateY: [
-          ['elInY', 'elOutY'],
-          [0, 100]
-        ],
-        scale: [
-          ['elInY', 'elInY + (screenHeight/2)'],
-          [1.15, 1]
-        ]
+        // translateY: [
+        //   ['elInY', 'elOutY'],
+        //   [0, 100]
+        // ],
       }
     })
 
@@ -164,7 +142,7 @@ $(function(){
     lax.addElements('#headline_2', {
       scrollY: {
         opacity: [
-          ['elInY + (screenHeight/4)' , 'elInY + (screenHeight/2)'],
+          ['elInY+50' , 'elInY + (screenHeight/4)'],
           [0, 1]
         ],
         // translateY: [
@@ -178,7 +156,7 @@ $(function(){
     lax.addElements('#text_2', {
       scrollY: {
         opacity: [
-          ['elInY + (screenHeight/4)' , 'elInY + (screenHeight/2)'],
+          ['elInY+50' , 'elInY + (screenHeight/2)'],
           [0, 1]
         ],
         // translateY: [
@@ -193,12 +171,12 @@ $(function(){
     lax.addElements('#button2', {
       scrollY: {
         opacity: [
-          ['elInY + (screenHeight/4)', 'elInY + (screenHeight/3)'],
+          ['elInY+50', 'elInY + (screenHeight/3)'],
           [0, 1]
         ],
         scale: [
           ['elInY', 'elInY + (screenHeight/2)'],
-          [1.15, 1]
+          [1.08, 1]
         ]
       }
     })
@@ -206,16 +184,12 @@ $(function(){
 
     
     //IMG 1
-    lax.addElements('#img', {
+    lax.addElements('#pieing', {
       scrollY: {
         opacity: [
-          ['elInY + (screenHeight/8)' , 'elInY + (screenHeight*0.7)'],
+          ['elInY + (screenHeight*0.65)' , 'elInY + (screenHeight*0.9)'],
           [0, 1]
         ],
-        scale: [
-          ['elInY', 'elInY + (screenHeight/2)'],
-          [1.15, 1]
-        ]
       }
     })
 
@@ -244,6 +218,21 @@ $(function(){
         ]
       }
     })
+
+    //Grafika
+    for (let i = 0; i <= 3; i++) {
+
+      lax.addElements('#karty' + i , {
+        scrollY: {
+          opacity: [
+            ['elInY + 100 +' + i*50 , 'elInY + 50' + i*0 ],
+            [0, 1]
+          ],
+        }
+      })
+
+    }
+
 
   
   })

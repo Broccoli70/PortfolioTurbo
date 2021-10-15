@@ -1,30 +1,35 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
   font-family: 'Cormorant Garamond', serif;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   overflow-x: hidden;
   background: #e285f4;
-  background: linear-gradient(45deg, #ffee52 0%, #d88853 100%);
+  background: #e8e9de;
 }
 
 .start {
+  overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 20vh;
+  height: 15vh;
   margin-top: 20vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -35,56 +40,43 @@ body {
 }
 
 .instruction {
-  font-size: 6rem;
-  font-weight: 100;
+  overflow-x: hidden;
+  font-size: 2.25rem;
+  font-weight: 300;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border: 1px solid black;
-  border-radius: 100px;
-  padding: 0 5% 0 5%;
+  border-radius: 0px;
+  padding: 1.25% 7% 1.25% 7%;
 }
 
 .header_picture {
-  margin-left: 45%;
+  margin-left: 55%;
   position: absolute;
   opacity: 0;
-  width: 45%;
+  width: 35%;
   z-index: 1000;
 }
 
 .name_bar {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr;
-  -ms-grid-columns: 4% 4% 40% 40%;
-      grid-template: 1fr 1fr / 4% 4% 40% 40%;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template: 1fr / 1fr 1fr;
   width: 100%;
   height: 20vh;
+  margin-top: 30vh;
   margin-left: 10%;
-  margin-top: 25vh;
-}
-
-.name_bar .logo {
-  opacity: 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: 1 / 1 / 1 / 1;
-  width: 100%;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
 }
 
 .name_bar h1 {
   opacity: 0;
   -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
-  grid-area: 1 / 3 / 1 / 5;
-  font-size: 5rem;
+  -ms-grid-column: 1;
+  grid-area: 1 / 1 / 1 / 1;
+  font-size: 6rem;
   font-weight: 500;
 }
 
@@ -94,7 +86,7 @@ body {
   font-weight: 400;
   background: black;
   color: white;
-  margin-left: 3%;
+  margin-left: 1%;
   height: 120%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -106,12 +98,13 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   border: 1px solid black;
-  padding: 0 2% 0 2%;
-  border-radius: 100px;
+  padding: 0 3% 0 3%;
+  border-radius: 0;
 }
 
 .name_bar h2:first-child {
   margin-left: 0;
+  border-radius: 0px;
   background: rgba(255, 255, 255, 0);
   color: black;
 }
@@ -126,9 +119,8 @@ body {
           flex-direction: row;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-area: 2 / 3 / 3 / 4;
+  -ms-grid-column: 1;
+  grid-area: 2 / 1 / 3 / 1;
   height: 1.5rem;
   width: 100%;
 }
@@ -140,7 +132,7 @@ body {
       grid-template-columns: 1fr 1fr 1fr / 1fr;
   width: 40%;
   margin-left: 10%;
-  margin-top: 10vh;
+  margin-top: 25vh;
 }
 
 .info h1 {
@@ -149,8 +141,8 @@ body {
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
   grid-area: 1 / 1 / 2 / 1;
-  font-weight: 400;
-  font-size: 4rem;
+  font-weight: 500;
+  font-size: 3.5rem;
 }
 
 .text {
@@ -159,7 +151,8 @@ body {
   -ms-grid-column: 1;
   grid-area: 2 / 1 / 3 / 1;
   font-size: 1.25rem;
-  margin-top: 4vh;
+  font-weight: 300;
+  margin-top: 2vh;
   width: 80%;
   opacity: 0;
 }
@@ -170,24 +163,24 @@ body {
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
   grid-area: 3 / 1 / 4 / 1;
-  height: 3vh;
-  width: 30%;
+  height: 4vh;
+  font-size: 0.9rem;
+  width: 40%;
   border: 1px solid black;
   background: none;
-  border-radius: 100px;
-  margin-top: 5vh;
+  border-radius: 0px;
+  margin-top: 7.5vh;
   padding: 0 2% 0 2%;
 }
 
 .actual_work:active {
-  background: #4825c5;
-  border: 0;
-  color: yellow;
+  background: #ff6e6e;
+  color: black;
 }
 
-.actual_work--white {
-  color: white;
-  border: 1px solid white;
+.actual_work:hover {
+  background: #f1f1f1;
+  cursor: pointer;
 }
 
 .actual_work--low {
@@ -200,12 +193,12 @@ body {
   -ms-grid-rows: 1fr;
   -ms-grid-columns: 10% 40% 1fr 10%;
       grid-template: 1fr / 10% 40% 1fr 10%;
-  background: #350042;
-  background: linear-gradient(45deg, #350042 0%, #1e0637 100%);
-  padding-top: 10%;
+  background: #ebeedf;
+  height: 50vh;
+  padding-top: 5%;
   padding-bottom: 10%;
   margin-top: 20vh;
-  color: white;
+  color: black;
 }
 
 .projekty .info {
@@ -213,55 +206,190 @@ body {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-area: 1 / 2 / 1 / 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0;
   width: 100%;
 }
 
-.mosaic {
+.projekty .buttons {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 2 / 1 / 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projekty .ilustracja_logo {
+  height: 150%;
+  margin-top: -15vh;
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-area: 1 / 3 / 1 / 4;
-  width: 90%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.pre-karty {
+  margin-top: 7.5vh;
+  margin-left: 10%;
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+.karty {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template: 1fr/ 1fr 1fr 1fr;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 3vh;
+  margin-bottom: 10vh;
+}
+
+.karty h2 {
+  font-weight: 300;
+}
+
+.obrazek {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.reakcja {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: 60% 40%;
+      grid-template: 1fr / 60% 40%;
+  margin-top: 1.5vh;
+}
+
+.reakcja-item:nth-child(1) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.mosaic_item {
-  width: 100%;
-  border-radius: 5px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-.big_title {
-  font-size: 14rem;
-  font-weight: 400;
   margin-left: 10%;
-  margin-top: 10vh;
 }
 
-.examples {
-  display: -ms-grid;
-  display: grid;
+.reakcja-item:nth-child(2) {
+  background: none;
+  margin-right: 10%;
+  font-size: 1rem;
+  border: 1px solid black;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.reakcja-item:nth-child(2):hover {
+  background: white;
+}
+
+.reakcja-item:nth-child(2) p {
+  margin-top: 2%;
+}
+
+.element {
+  border: 1px solid black;
+  padding-bottom: 2vh;
+}
+
+.element:first-child {
+  margin-right: 4%;
+}
+
+.element:nth-child(2) {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.element:nth-child(3) {
+  margin-left: 4%;
+}
+
+.naglowki {
+  margin-left: 10%;
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 3.5vh;
+}
+
+.rekomendacje {
+  height: 30vh;
   width: 80%;
-  -ms-grid-rows: 1fr 1fr;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template: 1fr 1fr / 1fr 1fr 1fr;
-  grid-gap: 2vh;
   margin-left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.examples_item {
-  border-radius: 10px;
+.rekomendacje-element {
+  border: 1px solid black;
   width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rekomendacje-element:nth-child(1) {
+  margin-right: 1%;
+}
+
+.rekomendacje-element:nth-child(2) {
+  margin-left: 1%;
+}
+
+.autor {
+  width: 30%;
+  border-right: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.autor img.zdjecie {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 60%;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.autor p {
+  margin-left: 5%;
+  margin-top: 1.5vh;
+}
+
+.autor p:last-child {
+  margin-top: 0;
+}
+
+.tekst {
+  width: 70%;
+  margin-left: 5%;
+  margin-top: 3%;
+  font-size: 2rem;
 }
 
 footer {
@@ -277,9 +405,9 @@ footer {
           align-items: center;
   margin-top: 10vh;
   width: 100%;
-  height: 10vh;
-  background: #26203b;
-  color: #8564c2;
+  height: 30vh;
+  background: #a0a095;
+  color: white;
 }
 
 .footer_info {
@@ -295,11 +423,12 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: 10%;
-  margin-top: 3vh;
+  margin-top: 15vh;
+  margin-bottom: 20vh;
 }
 
 .kontakt h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 400;
 }
 
@@ -308,6 +437,10 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .kontakt #mail {
@@ -315,24 +448,25 @@ footer {
 }
 
 .kontakt .mail {
-  margin-left: 2%;
+  margin-top: 1vh;
+  font-size: 2rem;
   border: 1px solid black;
-  padding: 0% 5% 0% 5%;
-  border-radius: 100px;
+  padding: 2% 5% 2% 5%;
+  margin-bottom: 5vh;
 }
 
 body::-webkit-scrollbar {
-  width: 0.9rem;
+  width: 0.5rem;
 }
 
 body::-webkit-scrollbar-track {
-  background: #d88853;
+  background: #b6b6b6;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #fad73c;
+  background-color: #363636;
   border-radius: 100px;
   padding: 10%;
-  border: 0.2rem solid #d88853;
+  border: 0.15rem solid #b6b6b6;
 }
 /*# sourceMappingURL=desk.css.map */

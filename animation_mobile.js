@@ -27,26 +27,12 @@ $(function(){
       }
       );
   
-      lax.addElements('.logo', {
-        scrollY: {
-          opacity: [
-            [0, 'elInY + (screenHeight*0.75)'],
-            [0, 1]
-          ]
-        }
-  
-      })
-  
       // SCROLL DOWN
       lax.addElements('#start', {
         scrollY: {
           opacity: [
-            [0, 150],
+            [0, 50],
             [1, 0]
-          ],
-          scale: [
-            [0, 'elOutY'],
-            [1, 1.25]
           ],
         }
   
@@ -56,8 +42,8 @@ $(function(){
       lax.addElements('.name', {
         scrollY: {
           opacity: [
-            [0, 'elInY + (screenHeight*0.75)'],
-            [0, 1]
+            [45, 'elInY + (screenHeight*0.75)', 'elInY + (screenHeight*0.9)', 'elInY + (screenHeight*1.1)'],
+            [0, 1, 1, 0]
           ]
         }
   
@@ -68,8 +54,8 @@ $(function(){
       lax.addElements('#flow', {
         scrollY: {
           opacity: [
-            [0, 'elInY + (screenHeight*0.75)'],
-            [0, 1]
+            [45, 'elInY + (screenHeight*0.65)', 'elInY + (screenHeight*0.8)', 'elInY + (screenHeight*0.9)'],
+            [0, 1, 1, 0]
           ],
         }
       })
@@ -78,12 +64,12 @@ $(function(){
       lax.addElements('.header_picture', {
         scrollY: {
           opacity: [
-            ['screenHeight/3', 'screenHeight/2'],
-            [0, 1]
+            ['elInY + (screenHeight*0.65)', 'elInY + (screenHeight*0.95)', 'elInY + (screenHeight*1.1)', 'elInY + (screenHeight*1.2)'],
+            [0, 1, 1, 0]
           ],
           translateY: [
-            ['elInY', 'elOutY'],
-            [150, -100]
+            ['elInY', 'elOutY-200'],
+            [150, -200]
           ],
         }
       })
@@ -92,7 +78,7 @@ $(function(){
       lax.addElements('#headline_1', {
         scrollY: {
           opacity: [
-            ['elInY + (screenHeight/4)' , 'elInY + (screenHeight/2)'],
+            ['elInY + (screenHeight*0.7)' , 'elInY + (screenHeight*0.8)'],
             [0, 1]
           ]
         }
@@ -102,7 +88,7 @@ $(function(){
       lax.addElements('.text', {
         scrollY: {
           opacity: [
-            ['elInY + (screenHeight/4)' , 'elInY + (screenHeight/2)'],
+            ['elInY + (screenHeight*0.55)' , 'elInY + (screenHeight*0.65)'],
             [0, 1]
           ]
         }
@@ -112,7 +98,7 @@ $(function(){
       lax.addElements('.actual_work', {
         scrollY: {
           opacity: [
-            ['elInY + (screenHeight/8)', 'elInY + (screenHeight/6)'],
+            ['elInY + (screenHeight*0.45)' , 'elInY + (screenHeight*0.5)'],
             [0, 1]
           ],
         }
