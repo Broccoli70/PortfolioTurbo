@@ -52,7 +52,7 @@ $(function(){
     lax.addElements('.name', {
       scrollY: {
         opacity: [
-          [0, 'elInY + (screenHeight*0.75)'],
+          [0, 'elInY + (screenHeight*0.1)'],
           [0, 1]
         ],
         // translateY: [
@@ -87,11 +87,26 @@ $(function(){
       scrollY: {
         opacity: [
           ['screenHeight/6', 'elOutY/3'],
-          [0, 1]
+          [0, 0.7]
         ],
         translateY: [
           ['elInY', 'elOutY'],
           [0, -200]
+        ],
+      }
+    })
+
+    
+    //cien
+    lax.addElements('.bg_head', {
+      scrollY: {
+        opacity: [
+          ['screenHeight/6', 'elOutY/3'],
+          [0, 0.5]
+        ],
+        translateY: [
+          ['elInY', 'elOutY'],
+          [-100, 0]
         ],
       }
     })
@@ -206,16 +221,12 @@ $(function(){
     })
 
     //Grafika
-    lax.addElements('#examples', {
+    lax.addElements('#projekty', {
       scrollY: {
         opacity: [
           ['elInY + (screenHeight/5)', 'elInY + (screenHeight/2)'],
           [0, 1]
         ],
-        scale: [
-          ['elInY', 'elInY + (screenHeight/2)'],
-          [1.15, 1]
-        ]
       }
     })
 

@@ -19,11 +19,24 @@ body {
   background: rgb(232, 233, 222);
 }
 
+a {
+  text-decoration: 0;
+  color: black;
+}
+
+header {
+  display: grid;
+  grid-template: 25vh 40vh 1fr / 1fr;
+  margin-top: 5vh;
+  height: auto;
+
+}
+
 .start {
+  grid-area: 1 / 1 / 1 / 1;
   display: flex;
   width: 100%;
-  height: 20vh;
-  margin-top: 15vh;
+
 
   justify-content: center;
   align-items: center;
@@ -33,6 +46,7 @@ body {
   font-size: 2rem;
   font-weight: 100;
   display: flex;
+  opacity: 1;
 
   border: 1px solid black;
   border-radius: 0px;
@@ -40,18 +54,21 @@ body {
 }
 
 .header_picture {
-  opacity: 0;
-  margin-top: 15vh;
+  grid-area: 3 / 1 / 4 / 1;
+  opacity: 1;
   width: 70%;
+  align-self: center;
   margin-left: 15%;
+  margin-top: 5vh;
   z-index: 1000;
 }
 
 .name_bar {
+  margin-top: 10vh;
+  grid-area: 2 / 1 / 3 / 1;
+  height: auto;
   display: flex;
   flex-direction: column;
-  height: 20vh;
-  margin-top: 10vh;
 
   h1 {
     opacity: 0;
@@ -64,6 +81,7 @@ body {
   }
 
   h2 {
+    grid-area: 1 / 1 / 1 / 1;
     opacity: 0;
 
     font-size: 0.8rem;
@@ -112,6 +130,7 @@ body {
     grid-area: 1 / 1 / 2 / 1 ;
     font-weight: 500;
     font-size: 4rem;
+    line-height: 0.95;
   }
 }
 
@@ -134,12 +153,6 @@ body {
   padding: 2% 5% 2% 5%;
   font-size: 1.5rem;
   background-color: white;
-
-  &:active {
-    background: rgb(72, 37, 197);
-    border: 0;
-    color: orange;
-  }
 
   &--white {
     color: black;
@@ -177,7 +190,7 @@ body {
   }
 
   .buttons {
-    margin-top: 4vh;
+    margin-top: 0vh;
     display: flex;
     flex-direction: column;
   }
@@ -189,7 +202,9 @@ body {
   margin-left: 10%;
   font-weight: 500;
   font-size: 4rem;
+
 }
+
 
 .karty {
   display: flex;
@@ -231,6 +246,60 @@ body {
     text-decoration: none;
     color: black;
   }
+}
+
+// BLOG
+
+.blog {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-bottom: 5vh;
+}
+
+.blog--element {
+  width: 100%;
+  border: 1px solid black;
+  margin-top: 5vh;
+  display: grid;
+  grid-template: 1fr / 45% 1fr;
+
+  img {
+    grid-area: 1 / 1 / 1 / 1;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid black;
+  }
+
+  .box--blog {
+    grid-area: 1 / 2 / 1 / 3;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-right: 5%;
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      margin-top: 0.5vh;
+    }
+  }
+
+  .blog--button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    padding-bottom: 2%;
+    border: 1px solid black;
+    width: 95%;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+  }
+
 }
 
 .rekomendacje {
