@@ -202,17 +202,15 @@ header {
   margin-left: 10%;
   font-weight: 500;
   font-size: 4rem;
+  margin-bottom: 5vh;
 
 }
-
 
 .karty {
   display: flex;
   flex-direction: column;
   margin-left: 10%;
   width: 80%;
-  margin-top: 4vh;
-  margin-bottom: 5vh;
 }
 
 .element {
@@ -248,6 +246,106 @@ header {
   }
 }
 
+// O MOICH PROJEKTACH
+
+.about {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5vh;
+
+  color: black;
+
+  .info {
+    grid-area: 1 / 2 / 1 / 3;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+  }
+
+  .buttons {
+    grid-area: 1 / 2 / 1 / 3;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ilustracja_logo {
+    width: 100%;
+    margin-top: -15vh;
+    grid-area: 1 / 3 / 1 / 4;
+    justify-self: flex-start;
+    align-self: flex-start;
+  }
+  
+}
+
+.about-headline {
+  font-weight: 500;
+  font-size: 3.5rem;
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+.about-box {
+  grid-area: 2 / 1 / 3 / 4;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.about-element {
+  display: grid;
+  grid-template: 15vh 1fr / 30% 1fr;
+  width: 100%;
+  margin-bottom: 10vh;
+
+  .icon {
+    grid-area: 1 / 1 / 1 / 1;
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+
+  }
+
+  h2 {
+    grid-area: 1 / 2 / 1 / 3;
+    align-self: center;
+    justify-self: flex-start;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-left: 5%;
+    border: 1px solid black;
+    padding: 4% 5% 4% 10%;
+    line-height: 1;
+
+  }
+
+  p {
+    grid-area: 2 / 1 / 3 / 3 ;
+    font-size: 1.65rem;
+    width: 100%;
+    margin-top: 5vh;
+  }
+
+  hr {
+    width: 100%;
+    height: 1px;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: black;
+    align-self: flex-start;
+    margin-top: 2vh;
+    grid-area: 2 / 1 / 3 / 3;
+  }
+
+
+}
+// END O MOICH PROJEKTACH
+
+
 // BLOG
 
 .blog {
@@ -267,7 +365,7 @@ header {
 
   img {
     grid-area: 1 / 1 / 1 / 1;
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
     height: 100%;
     border-right: 1px solid black;
@@ -356,16 +454,44 @@ footer {
   align-items: center;
   margin-top: 10vh;
   width: 100%;
-  height: 10vh;
   font-weight: 300;
+  padding: 20% 0 20% 0;
   background: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
 }
 
 .footer_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 80%;
-  font-size: 0.75rem;
+  font-size: 2rem;
   margin-left: 10%;
+
+  a {
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  .mail {
+    margin-top: 6vh;
+    text-align: center;
+    width: 90%;
+    font-weight: 500;
+    border: 1px solid rgb(68, 68, 68);
+    padding: 2% 5% 2% 5%;
+  }
+
+  .local {
+    margin-top: 5vh;
+    font-size: 1.75rem;
+  }
+
+}
+
+.footer_links {
+  display: flex;
+  flex-direction: column;
 }
 
 .kontakt {
