@@ -387,6 +387,12 @@ a {
   border-bottom: 1px solid black;
 }
 
+.obrazek2 {
+  width: 100%;
+  height: 100%;
+  border-bottom: 0px solid black;
+}
+
 .reakcja {
   display: -ms-grid;
   display: grid;
@@ -440,6 +446,23 @@ a {
 }
 
 .element:nth-child(3) {
+  margin-left: 4%;
+}
+
+.element--photo {
+  border: 1px solid black;
+}
+
+.element--photo:first-child {
+  margin-right: 4%;
+}
+
+.element--photo:nth-child(2) {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.element--photo:nth-child(3) {
   margin-left: 4%;
 }
 

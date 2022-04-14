@@ -308,6 +308,12 @@ a {
   border-bottom: 1px solid black;
 }
 
+.obrazek2 {
+  width: 100%;
+  height: 100%;
+  border-bottom: 0px solid black;
+}
+
 .reakcja {
   display: grid;
   grid-template: 1fr / 60% 40%;
@@ -343,6 +349,23 @@ a {
 .element {
   border: 1px solid black;
   padding-bottom: 2vh;
+
+  &:first-child {
+    margin-right: 4%;
+  }
+
+  &:nth-child(2) {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  &:nth-child(3) {
+    margin-left: 4%;
+  }
+}
+
+.element--photo {
+  border: 1px solid black;
 
   &:first-child {
     margin-right: 4%;
